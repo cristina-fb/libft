@@ -6,7 +6,7 @@
 /*   By: crisfern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 18:12:15 by crisfern          #+#    #+#             */
-/*   Updated: 2021/05/31 12:28:19 by crisfern         ###   ########.fr       */
+/*   Updated: 2021/06/17 10:44:21 by crisfern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ size_t	ft_strlen(const char *s)
 	int	n;
 
 	n = 0;
-	while (*s++)
-		n++;
+	if (s)
+	{
+		while (*s++)
+			n++;
+	}
 	return (n);
 }
